@@ -3,7 +3,7 @@
 
 ### Language
 
-Swift 4.2 My System was not updated so did not able to create this app in swift 5
+Swift 4.2 
 
 ### Tooling
 
