@@ -14,6 +14,22 @@ class FunQuizTests: XCTestCase {
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        
+        //This test case check wheater score increment is working proper or not
+        let questionViewModel = QuestionViewModel()
+        questionViewModel.incrementScoreByOne()
+        XCTAssert(questionViewModel.score == 1 , "Score is not incrementing correctly")
+        
+        //This test case check wheather question data fetched properly or not
+        questionViewModel.getQuestionData()
+        XCTAssert(questionViewModel.questionModelArray.count > 0 , "Question data not fetched successfully")
+        
+        //This test case check wheather answer matching algo working fine or not
+        for _ in questionViewModel.questionModelArray {
+            XCTAssert(questionViewModel.checkResult(answer: true), "Answer matching method is not working correctly")
+        }
+        
+        
     }
     
     override func tearDown() {
