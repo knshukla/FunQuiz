@@ -14,7 +14,7 @@ The project format is Xcode 9-compatible. Created using Xcode 9.4.1
 
 ## Running the app for the first time
 
-Download the app and open application in xcode. You need to launch the application landing screen will appear with these controls
+Download the app and open application in xcode. You need to launch the application Then landing screen will appear with these controls
 1. Score , First time it will be zero and a play button.
 Tap on play button to navigate the question screen.
 
